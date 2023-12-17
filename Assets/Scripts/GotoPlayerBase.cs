@@ -11,5 +11,6 @@ public class GotoPlayerBase : MonoBehaviour
     void Update()
     {
         enemy.SetDestination(baseMarker.position);
+        Debug.Log(baseMarker.position);
     }
 }
