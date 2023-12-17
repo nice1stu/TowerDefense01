@@ -74,7 +74,7 @@ public class NPCRecruit : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, muzzlePoint.position, muzzlePoint.rotation);
+        GameObject bulletGO = Instantiate(bulletPrefab, muzzlePoint.position, muzzlePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
         if (bullet != null)

@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour
     private Transform target;
     
     public float bulletSpeed = 70f;
+    public GameObject impactEffect;
 
     public void Seek(Transform _target)
     {
@@ -33,6 +34,9 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        Debug.Log("Hit Hit Hit");
+        GameObject effectInstance = (GameObject) Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(effectInstance, 2f);
+        Destroy(target.gameObject);
+        Destroy(gameObject);
     }
 }
