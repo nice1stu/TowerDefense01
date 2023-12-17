@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -4652832031878613202}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,5 +171,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c845ff4b28371a845bd69192c82d3646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyNavMesh: {fileID: 0}
-  baseMarker: {fileID: 0}
+  enemy: {fileID: -2221743020624897087}
+  baseMarker: {fileID: 5804029162837091255, guid: 9001e7210d59e454e95de9e9f27f35ff, type: 3}
